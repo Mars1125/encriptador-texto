@@ -1,0 +1,86 @@
+/* Media queries para tablets */
+@media (max-width: 768px) {
+    /* Ajustes para el contenedor principal en tablets */
+    .container {
+        display: flex;
+        flex-direction: column; /* Disposición vertical de los elementos */
+        margin-left: 0;
+        height: auto; /* Altura automática para adaptarse al contenido */
+        padding: 30px; /* Espaciado interno del contenedor */
+    }
+
+    /* Ajustes para los contenedores de entrada y salida en tablets */
+    .input, .output {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    /* Ajustes para el área editable en tablets */
+    .editable {
+        height: 60vh; /* Ocupa el 60% de la altura de la pantalla */
+        font-size: 18px; 
+    }
+
+    /* Ajustes para el contenedor de botones en tablets */
+    .button_container {
+        padding: 0; /* Eliminación del espaciado interno */
+    }
+
+    /* Ajustes para el contenedor de salida en tablets */
+    .output {
+        margin-top: 20px; 
+        padding: 20px; 
+    }
+
+    /* Ajustes para el área central en tablets */
+    .centralOut {
+        margin-top: 10px; 
+    }
+
+    /* Oculta la imagen en el área central en tablets */
+    .centralOut img {
+        display: none;
+    }
+
+    /* Oculta el contenedor de copiar y la etiqueta de texto en tablets */
+    .copy, .labelText {
+        display: none;
+    }
+
+    .copy{
+        text-align: center;
+    }
+
+    /* Ajustes para el botón de copiar en tablets */
+    .copy button {
+        width: 90%; 
+        padding: 0; 
+        margin-top: 10px; 
+    }
+}
+
+/* Media queries para celulares */
+@media (max-width: 480px) {
+    /* Ajustes para el área editable en celulares */
+    .editable {
+        height: 50vh; /* Ocupa el 50% de la altura de la pantalla */
+        font-size: 30px; 
+    }
+
+    /* Ajustes para el contenedor de botones en celulares */
+    .button_container {
+        display: flex;
+        flex-direction: column; /* Disposición vertical de los botones */
+    }
+
+    /* Ajustes para los botones en celulares */
+    .button_container button {
+        width: 100%; 
+        margin-top: 10px; 
+    }
+
+    /* Ajustes para el área central en celulares */
+    .centralOut {
+        margin-top:  10px; 
+    }
+}

@@ -1,0 +1,96 @@
+/*-----------------Contenedor principal------------------*/
+.container {
+    display: flex; /* Usa Flexbox para el diseño del contenedor */
+    margin-top: 10px;
+    margin-left: 150px; 
+    justify-content: space-between; /* Distribuye el espacio entre los elementos hijos */
+    height: 100vh; /* Altura completa de la ventana del navegador */
+}
+
+/*------------Primer contenedor----------*/
+.input {
+    width: 68%; 
+}
+
+/* Estilos para el párrafo dentro del primer contenedor */
+.input p {
+    color: #727272; 
+    margin-bottom: 30px; 
+}
+
+/* Estilos para la imagen dentro del primer contenedor */
+.input img {
+    margin-right: 10px; 
+}
+
+/* Estilos para el área editable */
+.editable {
+    height: 73%; 
+    font-size: 25px; 
+}
+
+[contenteditable] {
+    outline: 0 solid transparent; /* Elimina el borde predeterminado de los elementos editables */
+}
+
+/* Estilos para el contenedor de botones */
+.button_container {
+    display: flex; /* Usa Flexbox para el diseño de los botones */
+    justify-content: space-between; /* Distribuye el espacio entre los botones */
+}
+
+.button_container button {
+    width: 48%; 
+}
+
+/* Estilo específico para el botón de encriptación */
+.encrypt {
+    background-color: #0a3871; 
+    color: white;
+}
+
+/*-----------Segundo contenedor----------*/
+.output {
+    width: 28%; 
+    margin-top: -50px; 
+    background-color: #fff; 
+    border-radius: 20px; /* Bordes redondeados del contenedor */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Sombra alrededor del contenedor */
+    color: black; 
+}
+
+/* Estilos para la etiqueta de texto dentro del segundo contenedor */
+.labelText {
+    font-size: 25px; 
+    height: 22%; 
+    margin: 20px 20px 10px; 
+    visibility: hidden; 
+}
+
+/* Estilos para el área central dentro del segundo contenedor */
+.centralOut {
+    margin: 10px 30px 130px; 
+    text-align: center; 
+}
+
+
+.centralOut p {
+    margin-top: 15px; 
+}
+
+.centralOut img {
+    width: 80%; 
+}
+
+/* Estilos para el contenedor de copiar dentro del segundo contenedor */
+.copy {
+    display: flex; /* Usa Flexbox para el diseño del contenedor de copiar */
+    justify-content: center; 
+margin-top: -10%;
+}
+
+/* Estilos para el botón de copiar */
+.copy button {
+    width: 80%; 
+    visibility: hidden; /* Oculta el botón de copiar */
+}

@@ -1,0 +1,51 @@
+/* Reseteo de márgenes y rellenos para evitar inconsistencias entre navegadores */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/*------------------Estilos generales-------------*/
+body {
+    font-family: Arial, sans-serif; /* Fuente general para el texto */
+    background-color: #f7f7f7; /* Color de fondo */
+    padding: 20px; /* Espaciado interno del contenedor principal */
+    color: #0a3871; /* Color del texto */
+}
+
+header {
+    width: 50%; /* Ancho del encabezado */
+    height: auto; /* Altura automática según el contenido */
+    text-align: left; /* Alineación del contenido del encabezado */
+}
+
+header img {
+    max-width: 100px; /* Ancho máximo de la imagen en el encabezado */
+}
+
+button {
+    border-style: solid; /* Estilo del borde del botón */
+    border-color: #0a3871; /* Color del borde del botón */
+    border-radius: 30px; /* Bordes redondeados del botón */
+    height: 67px; /* Altura del botón */
+    color: #0a3871; /* Color del texto del botón */
+    background-color: transparent; /* Fondo transparente del botón */
+    font-size: 18px; /* Tamaño de la fuente del botón */
+}
+
+label {
+    max-width: 80%; /* Ancho máximo de la etiqueta */
+    font-size: 24px; /* Tamaño de la fuente de la etiqueta */
+    color: black; /* Color del texto de la etiqueta */
+    text-align: justify; /* Justificación del texto de la etiqueta */
+    word-break: break-word; /* Rompe las palabras si es necesario */
+    white-space: normal; /* Espaciado normal del texto */
+    overflow-wrap: break-word; /* Asegura que las palabras largas se rompan */
+}
+
+button:active {
+    transform: scale(0.95); /* Reduce el tamaño del botón al presionar */
+    box-shadow: inset 0 4px 6px rgba(0, 0, 0, 0.3); /* Efecto combinado con la sombra interior */
+}
+
+

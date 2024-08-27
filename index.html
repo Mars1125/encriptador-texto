@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Enlace a hojas de estilo -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="containers.css">
+    <link rel="stylesheet" href="responsive.css">
+    <title>ENCRIPTADOR</title>
+</head>
+<body>
+    <!-- Encabezado de la página -->
+    <header>
+        <img src="IMG/Logo.png" alt="Logo">
+    </header>
+
+    <!-- Contenedor principal -->
+    <div class="container">
+        <!-- Primer contenedor: entrada de texto y botones -->
+        <div class="input">
+            <!-- Campo editable para ingresar texto -->
+            <div id="textEditable" class="editable" contenteditable="true">
+                Ingrese el texto aquí ...
+            </div>
+            <br><br>
+            <!-- Mensaje informativo -->
+            <p><img src="IMG/bi_exclamation-circle-fill-1.png" alt="">Sólo letras minúsculas y acentos</p>
+            <!-- Botones para encriptar y desencriptar -->
+            <div class="button_container">
+                <button id="buttonEncrypt" class="encrypt">Encriptar</button>
+                <button id="buttonDesencrypt">Desencriptar</button>
+            </div> 
+        </div>
+
+        <!-- Segundo contenedor: salida de texto y botón de copiar -->
+        <div class="output">
+            <!-- Etiqueta de texto -->
+            <div id="labelText" class="labelText">
+                <label id="textOut">Etiqueta de texto:</label>
+            </div>
+            <!-- Área central para mostrar mensajes -->
+            <div id="centralOut" class="centralOut">
+                <img src="IMG/Muñeco.png" alt="Imagen">
+                <h2>Ningún mensaje fue encontrado</h2>
+                <p>Ingresa el texto que desees encriptar o desencriptar</p>
+            </div>
+            <!-- Botón para copiar el texto -->
+            <div class="copy">
+                <button id="buttonCopy">Copiar</button>
+            </div> 
+        </div>
+    </div>
+
+    <!-- Enlace a archivos JavaScript -->
+    <script src="app.js"></script>
+    <script src="appear.js"></script>
+</body>
+</html>
